@@ -1,0 +1,9 @@
+﻿<Application x:Class="Car_ShowRoom_WPF_MVP.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Car_ShowRoom_WPF_MVP"
+             StartupUri="View\MainView.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

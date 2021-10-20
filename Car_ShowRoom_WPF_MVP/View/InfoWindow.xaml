@@ -1,0 +1,40 @@
+﻿<Window x:Class="Car_ShowRoom_WPF_MVP.View.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Car_ShowRoom_WPF_MVP.View"
+        mc:Ignorable="d"
+       Title="InfoWindow" Height="600" Width="500">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.7*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel >
+            <Label Foreground="Yellow" BorderBrush="AliceBlue" Content="INFO PANEL" 
+                FontSize="25"   HorizontalAlignment="Center" DockPanel.Dock="Top" />
+        </DockPanel>
+        <TextBox x:Name="TBoxModelName"  Foreground="White" TextChanged="TBoxModelName_TextChanged" Grid.Row="1" Background="Black"/>
+        <TextBox x:Name="TBoxEngine" Foreground="White" TextChanged="TBoxEngine_TextChanged" Grid.Row="2" Background="Black"/>
+        <DatePicker x:Name="DPicker" Margin="30" FontSize="33" SelectedDateChanged="DatePicker_SelectedDateChanged" Grid.Row="3" FontStyle="Italic" Background="RoyalBlue"/>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Button_Confirm" Click="Button_Confirm_Click" Content="Confirm" FontSize="22" 
+                Background="LightYellow"    Margin="40"/>
+            <Button x:Name="Sell" Click="Sell_Click" Grid.Column="1" FontSize="22"
+               Background="LightYellow"       Margin="40" Content="Sell"/>
+        </Grid>
+
+
+
+
+    </Grid>
+</Window>

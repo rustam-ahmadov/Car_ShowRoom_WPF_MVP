@@ -1,0 +1,30 @@
+﻿<Window x:Class="Car_ShowRoom_WPF_MVP.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Car_ShowRoom_WPF_MVP.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="380" Loaded="Window_Loaded"
+        Closed="Window_Closed"> 
+
+    <Grid x:Name="GridMain">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button  x:Name="ButtonAdd" 
+                    Margin="40" FontSize="30" Click="ButtonAdd_Click">ADD</Button>
+            <Button x:Name="ButtonInfo" Grid.Column="1"  
+                Margin="40" FontSize="30" Click="ButtonInfo_Click">Info</Button>
+        </Grid>
+        <ListBox x:Name="ListBoxCars" SelectionChanged="ListBoxCars_SelectionChanged" Grid.Row="1" 
+            FontSize="14"     BorderThickness="3" Margin="10" />
+    </Grid>
+</Window>
